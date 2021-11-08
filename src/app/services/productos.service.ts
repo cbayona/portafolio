@@ -54,7 +54,7 @@ export class ProductosService {
     this.productosFiltrado = [];
     this.productos.forEach( prod => {
       // @ts-ignore
-      if(prod.categoria.indexOf(termino) >= 0 || prod.titulocd prod|.indexOf(termino) >= 0) {
+      if(prod.categoria.indexOf(termino) >= 0 || prod.titulo.indexOf(termino) >= 0) {
         this.productosFiltrado.push(prod);
       }
     } )
